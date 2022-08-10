@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  background-color: #eaeaea;
+}
+
+/* header design start **********************************************/
+
+/* top portion design start***************/
+.top-dissmissable-button {
+  display: flex;
+  justify-content: center;
+  background-color: #363860;
+  padding: 10px;
+}
+
+.left-top-massage {
+  margin-right: 5px;
+  color: white;
+}
+
+.chrome-icon img {
+  width: 20px;
+  height: 20px;
+}
+.chrome-icon {
+  display: flex;
+  align-items: center;
+}
+
+.right-top-massage {
+  margin-left: 5px;
+  color: white;
+}
+.top-dissmissable-button p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.link {
+  color: white;
+  font-family: sans-serif;
+}
+
+/* media *************************/
+@media only screen and (max-width: 675px) {
+  .top-dissmissable-button {
+    flex-direction: column;
+  }
+  .chrome-icon {
+    margin-left: 50%;
+  }
+  .left-top-massage,
+  .right-top-massage {
+    text-align: center;
+  }
+}
+
+/* design end top-dissmissable */
+
+/* design start main header */
+
+.mrkup-header-main {
+  background-color: white;
+  position: sticky;
+}
+
+.mrkup-header-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.mrkup-logo {
+  display: flex;
+  align-items: center;
+  flex-basis: 20%;
+}
+.mrkup-logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.list-items ul {
+  display: flex;
+  list-style: none;
+  direction: ltr;
+  margin-left: 100px;
+  justify-content: flex-end;
+}
+.list-items ul li a {
+  display: flex;
+  margin-right: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #696969;
+}
+.list-items {
+  display: flex;
+  flex-basis: 40%;
+  margin-left: 190px;
+  padding: 0 10px;
+}
+
+.button-mrkup-login-sup {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 10px;
+  flex-basis: 20%;
+  line-height: 1;
+}
+.log-in {
+  padding: 10px 34px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: sans-serif;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  line-height: 1;
+}
+.log-in:hover {
+  background-color: #fbcdc2;
+  border: none;
+}
+.Sign-up {
+  padding: 10px 24px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: sans-serif;
+  border-radius: 8px;
+  border: none;
+  background-color: #030cf0;
+  color: white;
+  cursor: pointer;
+}
+.menu-bar {
+  display: none;
+  width: 23px;
+  height: 23px;
+  border: 2px solid grey;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .list-items {
+    display: none;
+  }
+  .button-mrkup-login-sup {
+    flex-basis: 70%;
+  }
+  .menu-bar {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .log-in {
+    display: none;
+  }
+  .menu-bar {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+/* design start main header */
+
+/* hero design start */
+.mrkup-hero {
+}
+
+.mrkup-hero-wrapper {
+}
+
+.markup-hero-main {
+  text-align: center;
+  margin-top: 50px;
+}
+.markup-hero-main p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-bottom: 1.875rem;
+  line-height: 1;
+}
+
+h4 {
+  display: block;
+  font-size: 68px;
+  font-weight: 700;
+  font-family: sans-serif;
+  line-height: 1;
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 1.556rem;
+  margin-left: 32%;
+  color: #16120e;
+  letter-spacing: 1.25;
+}
+
+.button-hero {
+  display: flex;
+  justify-content: center;
+}
+.button-hero .sign-up-hero-email a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 1.25;
+}
+.button-hero .sign-up-hero-google a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 1.25;
+}
+
+.sign-up-hero-email {
+  display: flex;
+  align-items: center;
+  background-color: #030cf0;
+  margin-right: 15px;
+  padding: 15px 30px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.sign-up-hero-email:hover {
+  transform: translateY(-10px);
+  transition-duration: 1s;
+}
+.sign-up-hero-email img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.sign-up-hero-google {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.sign-up-hero-google:hover {
+  transform: translateY(-10px);
+  transition-duration: 1s;
+}
+.sign-up-hero-google img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+.logo-list img {
+  width: 200px;
+  height: auto;
+}
+.logo-list {
+  padding: 0 95px;
+  margin-top: 35px;
+}
+.logo-list ul {
+  display: flex;
+  flex-basis: 15px;
+  direction: ltr;
+  list-style: none;
+  justify-content: space-around;
+}
+.hero-image img {
+  max-width: 840px;
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+/* hero design ends */
