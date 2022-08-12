@@ -12,7 +12,7 @@ img {
   padding: 0 15px;
 }
 body {
-  background-color: #eaeaea;
+  /* background-color: #eaeaea; */
 }
 
 /* header design start **********************************************/
@@ -72,7 +72,7 @@ body {
 /* design start main header */
 
 .mrkup-header-main {
-  background-color: white;
+  background-color: #f7f7f7;
   position: sticky;
 }
 
@@ -185,6 +185,7 @@ body {
 
 /* hero design start */
 .mrkup-hero {
+  background-color: #eaeaea;
 }
 
 .mrkup-hero-wrapper {
@@ -192,7 +193,7 @@ body {
 
 .markup-hero-main {
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .markup-hero-main p {
   font-size: 16px;
@@ -202,8 +203,7 @@ body {
   line-height: 1;
 }
 
-h4 {
-  display: block;
+.heading h4 {
   font-size: 68px;
   font-weight: 700;
   font-family: sans-serif;
@@ -214,6 +214,10 @@ h4 {
   margin-left: 32%;
   color: #16120e;
   letter-spacing: 1.25;
+}
+.heading {
+  /* max-width: 1000px */
+  padding: 10px;
 }
 
 .button-hero {
@@ -253,7 +257,7 @@ h4 {
 .sign-up-hero-email img {
   width: 20px;
   height: 20px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .sign-up-hero-google {
@@ -272,7 +276,7 @@ h4 {
 .sign-up-hero-google img {
   width: 15px;
   height: 15px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .logo-list img {
   width: 200px;
@@ -295,5 +299,195 @@ h4 {
 .hero-image {
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
+
+/* media hero sections ********************************************/
+
+@media only screen and (max-width: 1200px) {
+  .heading h4 {
+    font-size: 32px;
+    max-width: 100%;
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .heading {
+    margin-left: -5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .heading {
+    margin-left: -15%;
+  }
+  .button-hero {
+    display: block;
+    padding: 0 40px;
+  }
+  .sign-up-hero-google {
+    max-width: 100%;
+    justify-content: center;
+  }
+  .sign-up-hero-email {
+    max-width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .hero-image img {
+    max-width: 100%;
+    padding: 10px;
+    object-fit: contain;
+  }
+  .logo-list ul {
+    flex-wrap: wrap;
+  }
+  .logo-list {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .heading {
+    margin-left: -40%;
+  }
+  .logo-list ul li img {
+    max-width: 110px;
+  }
+  .logo-list {
+    padding: 0 20px;
+  }
+  .hero-image img {
+    max-width: 100%;
+  }
+}
+
 /* hero design ends */
+
+/* feedback design start ******************************/
+
+.feedback-io-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-main-io-left {
+  flex-basis: 50%;
+  max-width: 100%;
+  padding: 120px 50px 0px 100px;
+  box-sizing: border-box;
+}
+.heading-main-feedback {
+  margin-bottom: 60px;
+}
+.heading-feedback {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+.feedback-details {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: #16120e;
+}
+
+.feedback-source {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-img {
+  display: flex;
+  background-color: #030cf0;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 20px;
+}
+.web-feedback p,
+.pdf-feedback p,
+.image-feedback p,
+.video-feedback p {
+  font-size: 18px;
+  font-weight: 600px;
+  font-family: sans-serif;
+  margin-top: 15px;
+  color: #16120e;
+}
+
+.image-feedback,
+.video-feedback,
+.web-feedback,
+.pdf-feedback {
+  text-align: left;
+  flex-basis: 15%;
+}
+
+.comment-img img {
+  max-width: 30px;
+}
+
+.feedback-main-io-right {
+  flex-basis: 50%;
+}
+.feedback-main-io-right img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 375px) {
+  .feedback-io-main {
+    flex-wrap: wrap;
+  }
+  .feedback-main-io-right {
+    flex-basis: 100%;
+    order: 2;
+    padding: 30px;
+  }
+  .heading-feedback {
+    font-size: 24px;
+  }
+  .feedback-main-io-right .feedback-right-image img {
+    max-width: 100%;
+  }
+  .feedback-main-io-left {
+    flex-basis: 100%;
+    padding: 30px;
+  }
+  .comment-img img {
+    max-width: 25px;
+  }
+  .comment-img {
+    max-width: 20px;
+  }
+  .image-feedback p,
+  .video-feedback p,
+  .web-feedback p,
+  .pdf-feedback p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .feedback-io-main {
+    flex-wrap: wrap;
+  }
+  .feedback-main-io-right {
+    flex-basis: 100%;
+    order: 2;
+  }
+  .feedback-main-io-left {
+    flex-basis: 100%;
+  }
+  .feedback-main-io-right .feedback-right-image img {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .feedback-right-image img {
+    max-width: 100%;
+  }
+}
+
+/* feedback design ends******************************/
