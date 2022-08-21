@@ -71,9 +71,7 @@ img {
 
 .mrkup-header-main {
   background-color: #f7f7f7;
-  position: sticky;
 }
-
 .mrkup-header-main-wrapper {
   display: flex;
   justify-content: space-between;
@@ -994,6 +992,67 @@ img {
 
 /* icons section design ends */
 
+/* banking section design start *************************************************/
+
+.thanking-section {
+  background-color: #eaeaea;
+}
+
+.thaking-main-wrapper {
+  padding: 150px 10px;
+}
+
+.heading-thanking {
+  text-align: center;
+}
+.heading-thanking h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.heading-thanking p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 1.2;
+}
+.button-thanking a img {
+  margin-left: 10px;
+}
+.button-thanking {
+  display: flex;
+  justify-content: center;
+}
+.button-thanking a {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 7px;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-decoration: none;
+  align-items: center;
+}
+.button-thanking a:hover {
+  transform: translateY(-10px);
+  transition-duration: 1s;
+  box-shadow: 0 12px 16px 0 rgba(2, 2, 5, 0.24),
+    0 17px 50px 0 rgba(187, 57, 57, 0.065);
+}
+
+@media only screen and (max-width: 576px) {
+  .heading-thanking h3 {
+    font-size: 26px;
+  }
+}
+
+/* banking section design ends *************************************************/
+
 /* footer design start ***************************************************************/
 .footer-upper-main-wrapper {
   background-color: #f7f7f7;
@@ -1061,9 +1120,7 @@ img {
   margin-top: 50px;
   border-top: 1px solid #eaeaea;
   padding-top: 30px;
-  align-items: center;
   padding-bottom: 30px;
-  
 }
 
 .logo-mio {
@@ -1071,6 +1128,7 @@ img {
 }
 .logo-mio img {
   max-width: 35px;
+  height: auto;
 }
 
 .pera {
@@ -1094,6 +1152,68 @@ img {
   font-family: sans-serif;
   color: #696969;
   line-height: 1.2;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-mio-upper-main-wrap {
+    flex-wrap: wrap;
+  }
+  .product-sec {
+    flex-basis: 50%;
+  }
+  .company-sec {
+    flex-basis: 50%;
+  }
+  .support-sec {
+    flex-basis: 50%;
+    margin-top: 30px;
+  }
+  .legal-sec {
+    flex-basis: 50%;
+    margin-top: 30px;
+  }
+  .footer-logo-sec {
+    flex-direction: column;
+    text-align: center;
+  }
+  .copyright p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .logo-mio img {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-mio-upper-main-wrap {
+    flex-wrap: wrap;
+    padding-left: 60px;
+  }
+  .product-sec {
+    flex-basis: 50%;
+  }
+  .company-sec {
+    flex-basis: 50%;
+  }
+  .support-sec {
+    flex-basis: 50%;
+    margin-top: 30px;
+  }
+  .legal-sec {
+    flex-basis: 50%;
+    margin-top: 30px;
+  }
+  .footer-logo-sec {
+    flex-direction: column;
+    text-align: center;
+  }
+  .copyright p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .logo-mio img {
+    margin-bottom: 15px;
+  }
 }
 
 /* footer design ends *********************************************/
